@@ -7,6 +7,10 @@ img {
     max-width: 100%;
 }
 
+.pad {
+    padding: 10px;
+}
+
  a:link {
     color: black;
   }
@@ -38,6 +42,11 @@ img {
     src: url(redaction20italic.otf);
     }
 
+@font-face {
+    font-family:hiragino;
+    src: url(hiraginomarugothicpronw4.otf);
+}
+
 .p1 {
     font-family: redaction20;
     font-size: 14px;
@@ -51,8 +60,21 @@ img {
     color: black;
 }
 
+.h2 {
+    font-family: hiragino;
+    font-size: 26px;
+    color: black;
+}
+
 .p2 {
     font-family: redaction20italic;
+    font-size: 14px;
+    color: black;
+    line-height: 25px;
+}
+
+.p3 {
+    font-family: redaction20bold;
     font-size: 14px;
     color: black;
     line-height: 25px;
