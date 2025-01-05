@@ -4,7 +4,7 @@
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .marg {
@@ -120,7 +120,7 @@ img {
 }
 
 .button {
-    /* background: magenta; */
+    background: magenta;
     width: 50px;
     height: 20px;
     display: flex;
@@ -131,7 +131,7 @@ img {
 }
 
 .button2 {
-    /* background: magenta; */
+    background: magenta;
     width: 140px;
     height: 20px;
     display: flex;
@@ -158,6 +158,10 @@ img {
     width: 100%;
     padding: 20px;
     border-top: solid 1px black;
+}
+
+.sim {
+    max-width: 100%;
 }
 
 .right {
@@ -195,4 +199,45 @@ img {
     height: auto;
     width: 100%;
     padding: 20px;
+}
+
+@media screen and (max-width:1000px) {
+
+.container {
+    flex-direction: column;
+    height: auto;
+}
+
+.left {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.right {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.title {
+    height: auto;
+}
+
+.navigation {
+    height: auto;
+}
+
+.about {
+    height: auto;
+}
+
+.sim {
+    display: none;
+}
+
+img {
+    /* object-fit: cover; */
+}
+
 }
