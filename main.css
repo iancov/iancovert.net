@@ -120,7 +120,7 @@ img {
 }
 
 .button {
-    background: magenta;
+    /* background: magenta; */
     width: 50px;
     height: 20px;
     display: flex;
@@ -131,7 +131,7 @@ img {
 }
 
 .button2 {
-    background: magenta;
+    /* background: magenta; */
     width: 140px;
     height: 20px;
     display: flex;
