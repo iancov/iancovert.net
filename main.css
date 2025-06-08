@@ -119,9 +119,10 @@ a.a2:active {
 }
 
 .about {
-    width: 384px;
+    width: 395px;
     height: 100%;
     padding: 10px;
+    overflow-y: scroll;
 
     display: flex;
     flex-direction: column;
@@ -143,7 +144,7 @@ a.a2:active {
 }
 
 .work {
-    width: calc(100% - 384px);
+    width: calc(100% - 395px);
     height: 100%;
     overflow-y: scroll;
 
@@ -161,8 +162,30 @@ a.a2:active {
     object-fit: contain;
 }
 
+.caption {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: auto;
+    max-width: 1000px;
+    padding: 2.5px 10px 2.5px 10px;
+
+    color: blue;
+    font-family: hiragino;
+    font-size: 1em;
+    background: white;
+    /* border: 1px solid blue; */
+
+    visibility: hidden;
+}
+
 .pic:hover {
     transform: rotate(3.5deg);
+}
+
+.pic:hover + .caption {
+    visibility: visible;
 }
 
 .shadow {
