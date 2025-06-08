@@ -85,7 +85,6 @@ a.a2:active {
     font-family: hiragino;
     color: rgb(190, 190, 190);
     font-size: 1.2em;
-    background: white;
 }
 
 .sitelist {
@@ -123,6 +122,24 @@ a.a2:active {
     width: 384px;
     height: 100%;
     padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.biography {
+    /* background: lightsalmon; */
+    margin-bottom: 20px;
+}
+
+.othersites {
+    /* background: lightgoldenrodyellow; */
+    margin-bottom: 20px;
+}
+
+.copyright {
+    /* background: lightpink; */
 }
 
 .work {
@@ -134,17 +151,6 @@ a.a2:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.copyright {
-    width: auto;
-    height: auto;  
-    padding-left: 10px; 
-    padding-bottom: 5px;  
-    
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 .pic {
@@ -171,7 +177,6 @@ a.a2:active {
 
 .p2 {
     font-size: 1.5em;
-    text-align: center;
 }
 
 .container {
@@ -191,12 +196,24 @@ a.a2:active {
     overflow-y: visible;
 }
 
-.bottom {
-    position: static;
-}
-
 .pic {
     height: 480px;
 }
+
+.hidecopyright {
+    display: none;
+}
    
+}
+
+@media screen and (max-height:850px) and (min-width:1000px) {
+
+.p1 {
+    font-size: 2em;
+}
+
+.p2 {
+    font-size: 1.5em;
+}
+
 }
