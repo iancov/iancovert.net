@@ -1,242 +1,65 @@
 * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
 }
 
-.shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+p {
+    font-family: Helvetica;
+    color:rgb(75, 75, 75);
+    margin-top: 0;
 }
 
-a.p1:link {
-    color: blue;
-  }
-  
-a.a1:visited {
-    color: blue;
-  }
-  
-a.a1:hover {
-    color: rgba(0, 0, 255, 0.50);
-  }
-  
-a.a1:active {
-    color: rgb(0, 255, 255);
-  }
-
-a.a2:link {
-    color: red;
-  }
-  
-a.a2:visited {
-    color: red;
-  }
-  
-a.a2:hover {
-    color: rgba(255, 0, 0, 0.5);
-  }
-  
-a.a2:active {
-    color: rgb(0, 255, 255);
-  }
-
-@font-face {
-    font-family:redaction20;
-    src: url(redaction20.otf);
-    }
-
-@font-face {
-    font-family:redaction20bold;
-    src: url(redaction20bold.otf);
-    }
-
-@font-face {
-    font-family:redaction20italic;
-    src: url(redaction20italic.otf);
-    }
-
-@font-face {
-    font-family:hiragino;
-    src: url(hiragino.otf);
+a:link {
+    color:rgb(115, 115, 115);
 }
 
-.p1 {
-    font-family: hiragino;
-    color: black;
-    font-size: 2.75em;
-    line-height: 1.125em;
+a:visited {
+    color:rgb(115, 115, 115);
 }
 
-.blurb {
-    max-width: 1500px;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+a:hover {
+    color:rgb(115, 115, 115);
 }
 
-.p2 {
-    font-family: hiragino;
-    color: red;
-    font-size: 2em;
-    line-height: 1.125em;
+a:active {
+    color:rgb(115, 115, 115);
 }
 
-.p3 {
-    font-family: hiragino;
-    color: rgb(190, 190, 190);
-    font-size: 1.2em;
+img {
+    height: 350px;
 }
 
-.sitelist {
-    line-height: 1.5em;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.blacktext {
-    color: black;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    direction: row;
-    overflow-y: hidden;
-}
-
-.sitecontainer {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about {
-    width: 395px;
-    height: 100%;
-    padding: 10px;
-    overflow-y: scroll;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.biography {
-    /* background: lightsalmon; */
-    margin-bottom: 20px;
-}
-
-.othersites {
-    /* background: lightgoldenrodyellow; */
-    margin-bottom: 20px;
-}
-
-.copyright {
-    /* background: lightpink; */
-}
-
-.work {
-    width: calc(100% - 395px);
-    height: 100%;
-    overflow-y: scroll;
-
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
     justify-content: space-evenly;
 }
 
-.pic {
-    height: 580px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    object-fit: contain;
+.toppanel {
+    background-color:rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(16px);
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: hidden;
 }
 
-.caption {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: auto;
-    max-width: 1000px;
-    padding: 2.5px 10px 2.5px 10px;
-
-    color: blue;
-    font-family: hiragino;
-    font-size: 1em;
-    background: white;
-    /* border: 1px solid blue; */
-
-    visibility: hidden;
+.bottompanel {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
-.pic:hover {
-    transform: rotate(3.5deg);
+@media screen and (max-width:500px) {
+img {
+    height: 100%;
+    max-width: 95%;
 }
-
-.pic:hover + .caption {
-    visibility: visible;
-}
-
-.shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
-
-@media screen and (max-width:1000px) {
-    
-.p1 {
-    font-size: 1.5em;
-}
-
-.p2 {
-    font-size: 1.5em;
-}
-
-.container {
-    flex-direction: column;
-    overflow-y: visible;
-}
-
-.about {
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-}
-
-.work {
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-}
-
-.pic {
-    height: 480px;
-}
-
-.hidecopyright {
-    display: none;
-}
-   
-}
-
-@media screen and (max-height:850px) and (min-width:1000px) {
-
-.p1 {
-    font-size: 2em;
-}
-
-.p2 {
-    font-size: 1.5em;
-}
-
 }
