@@ -10,6 +10,10 @@ img {
     background: #FFFCE2;
 }
 
+.colortext {
+    color:  #aaa689;
+}
+
 .container {
     /* background: lightcyan; */
     width: 100%;
@@ -22,12 +26,12 @@ img {
 
 .aboutcolumn {
     /* background: lightskyblue; */
-    width: 20%;
+    width: 25%;
     padding: 5px;
 }
 
 .workwrap {
-    width: 80%;
+    width: 75%;
     height: 100%;
 
     display: flex;
@@ -72,14 +76,14 @@ a:active {
 
 .aboutcolumn {
     width: 100%;
-    height: 300px;
+    height: 20%;
     border-bottom: 1px solid black;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .workwrap {
     width: 100%;
-    height: calc(100% - 300px);
+    height: 80%;
 }
 
 img {
