@@ -32,7 +32,7 @@ img {
 
 .workwrap {
     width: 75%;
-    height: 100%;
+    /* height: 100%; */
 
     display: flex;
     flex-direction: row;
@@ -67,6 +67,14 @@ a:active {
     color: blue;
 }
 
+.showmoredt {
+    display: block;
+}
+
+.showmoremb {
+    display: none;
+}
+
 @media screen and (max-width:800px) {
 
 .container {
@@ -76,18 +84,26 @@ a:active {
 
 .aboutcolumn {
     width: 100%;
-    height: 20%;
     border-bottom: 1px solid black;
-    overflow-y: scroll;
+    height: auto;
 }
 
 .workwrap {
     width: 100%;
-    height: 80%;
+    min-height: 500px;
+    flex-grow: 1;
 }
 
 img {
     margin: 5px;
+}
+
+.showmoredt {
+    display: none;
+}
+
+.showmoremb {
+    display: block;
 }
 
 }
